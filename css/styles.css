@@ -1,0 +1,64 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secunadrio: #0097a7;
+    --gris: #757575;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /* 1rem = 10px */
+    font-size: 16px; 
+    font-family:  'Anek Malayalam', sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto ;
+
+}
+
+.nav-bg{
+    background-color: var(--secunadrio);
+
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;    
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+}
+
+.navegacion-principal a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
