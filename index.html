@@ -194,42 +194,44 @@
           </p>
         </section>
       </div>
-    </main>
 
     <section>
       <h2>Contacto</h2>
-      <form action="">
+      <form action="" class="formulario">
         <fieldset>
           <legend>Contactar</legend>
 
-          <div>
+          <div class="contenedor-campos">
+          <div class="campo">
             <label for="nombre">Nombre</label>
-            <input type="text" placeholder="Nombre" />
+            <input class="input-text" type="text" placeholder="Nombre" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="telefono">Telefono</label>
-            <input type="tel" placeholder="Telefono" />
+            <input class="input-text" type="tel" placeholder="Telefono" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="correo">Correo</label>
-            <input type="email" placeholder="Correo" />
+            <input class="input-text" type="email" placeholder="Correo" />
           </div>
 
-          <div>
+          <div class="campo">
             <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
+            <textarea class="input-text" name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
           </div>
+        </div>
 
-          <div>
-            <input type="submit" value="enviar" />
+          <div class="alinear-derecha flex">
+            <input class="btn w-sm-100" type="submit" value="enviar" />
           </div>
         </fieldset>
       </form>
     </section>
+  </main>
 
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. Alexis Fernando Freelancer</p>
     </footer>
   </body>
